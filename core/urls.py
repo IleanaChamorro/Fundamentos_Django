@@ -7,5 +7,3 @@ urlpatterns = [
     path('', status_code_view, name='home'),
     path('entries', include('posts.urls', namespace='entries'))
 ]
-
-handler404 = 'posts.views.status_code_view'
