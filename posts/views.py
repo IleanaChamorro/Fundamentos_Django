@@ -10,3 +10,6 @@ def dummy_view(request):
 
 def status_code_view(request, exception):
     return HttpResponseNotFound('Pagina Web no encontrada, error 404')
+
+def entry_list(request):
+    return render(request, "post_list.html", {})
